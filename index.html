@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Psychedelic Survey Form</h1>
+    <p id="description">Just a form to practice and test some ideas</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name"
+                    required /></label>
+
+            <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email"
+                    required /></label>
+
+            <label for="number" id="number-label">Age <input type="number" id="number" min="18" max="113"
+                    placeholder="Enter your age in years" required /></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> In general, how do you describe your experience with psychedelics?
+                <select id="dropdown" name="dropdown">
+                    <option value="0">Never tried</option>
+                    <option value="great">Great</option>
+                    <option value="good">Good</option>
+                    <option value="ns">Nothing special</option>
+                    <option value="bad">Bad</option>
+                    <option value="traumatizing">Traumatizing</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="field1">
+            <p>Would you try again/for the first time?</p>
+            <label for="try1"><input type="radio" id="try1" name="try" class="inline" value="oportunity" /> Just need
+                the oportunity</label>
+            <br>
+            <label for="try2"><input type="radio" id="try2" name="try" class="inline" value="depends" /> Depends on the
+                day</label>
+            <br>
+            <label for="try3"><input type="radio" id="try3" name="try" class="inline" value="theSaint" /> Drugs are for
+                lOOsers, thats why I olny do ALCOHOL AND DIAZEPAM! IMA WINNER MOTHERFUCKAR!!!</label>
+        </fieldset>
+        <fieldset class="field1">
+            <p>Which psychedelics have you tried? <span id="clue">(If you have)</span></p>
+            <label for="magicMush"><input type="checkbox" id="magicMush" value="magicMush" class="inline" /> Magic
+                Mushroons</label>
+            <br>
+            <label for="lsd"><input type="checkbox" id="lsd" value="lsd" class="inline" /> LSD</label>
+            <br>
+            <label for="mescaline"><input type="checkbox" id="mescaline" value="mescaline" class="inline" />
+                Mescaline</label>
+            <br>
+            <label for="ayahuasca"><input type="checkbox" id="ayahuasca" value="ayahuasca" class="inline" />
+                Ayahuasca</label>
+            <br>
+            <label for="dmt"><input type="checkbox" id="dmt" value="dmt" class="inline" /> DMT</label>
+            <br>
+            <label for="others"><input type="checkbox" id="others" value="others" class="inline" /> Others <input
+                    type="text" placeholder="Which ones?" name="others" /></label>
+        </fieldset>
+        <fieldset>
+            <label for="report">Please, tell us your experience if you wish: <textarea id="report" name="report"
+                    placeholder="I like to watch blank walls melt..." rows="3"></textarea>
+        </fieldset>
+        <button id="submit" type="submit" onclick="submit()">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
